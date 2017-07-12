@@ -12,7 +12,9 @@
                 <td data-bind="text: $data" class="filter-table-cell"></td>
             </tr>
         <!-- /ko -->
-            <tr data-bind="visible: filterBy().length"><td class="filter-table-error">No cells to show</td></tr>
+            <tr data-bind="visible: filteredTable().length == 0"><td class="filter-table-error">No cells 
+to 
+show</td></tr>
     </tbody>
     </table>
 </div>
