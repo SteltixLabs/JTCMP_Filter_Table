@@ -1,0 +1,20 @@
+table, tr, td {
+    border: 1px solid #d6dfe6;
+}
+
+.filter-table td {
+    padding: 5px;
+    color: #333;
+}
+
+.filter-table-cell {
+    background-color: white;
+}
+
+.filter-table-header {
+    background-color: #f1f3f8;
+}
+
+.filter-table-error {
+    background-color: tomato;
+}

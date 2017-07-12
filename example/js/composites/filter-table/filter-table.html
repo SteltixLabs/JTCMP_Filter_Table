@@ -1,0 +1,18 @@
+<!-- <input type="text" data-bind="value: filterBy, event: {keypress: doAThing}" placeholder="Filter" /> -->
+<div class="filter-table">
+    <input type="text" data-bind="textInput: filterBy" placeholder="Filter" />
+    </br></br>
+    <table>
+    <thead>
+        <tr data-bind="foreach: header"><td class="filter-table-header" data-bind="text: $data"></td></tr>
+    </thead>
+    <tbody>
+        <!-- ko foreach: filteredTable -->
+            <tr data-bind="foreach: $data">
+                <td data-bind="text: $data" class="filter-table-cell"></td>
+            </tr>
+        <!-- /ko -->
+            <tr data-bind="visible: filterBy().length"><td class="filter-table-error">No cells to show</td></tr>
+    </tbody>
+    </table>
+</div>
